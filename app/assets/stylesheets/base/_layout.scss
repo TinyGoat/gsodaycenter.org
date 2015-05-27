@@ -9,9 +9,14 @@ body {
 		background-size: cover;
 	}
 
+	&#blogging {
+		background: url('/assets/blogging.jpg') center -200px no-repeat fixed;
+		background-size: cover;
+	}
+
 	&#donors {
 		//background: url('/assets/volunteers.jpg') center -100px no-repeat fixed;
-		background: $primary;
+		background: $mint;
 	}
 }
 
@@ -21,8 +26,14 @@ header, article, footer {
 article {
 	&.main {
 		background: #fff;
+		overflow: hidden;
 		.row {
 			padding: $base-spacing 0;
+		}
+		.row-narrow {
+			padding: $base-spacing 0;
+			@include span-columns(8);
+			@include shift(2);
 		}
 	}
 }

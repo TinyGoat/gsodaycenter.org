@@ -38,8 +38,8 @@
 				</ul>
 			</li>
 			<li><%= link_to "Daily Services", static_path('daily-services') %></li>
-			<li><%= link_to "Events", "#" %></li>
-			<li><%= link_to "News", "#" %></li>
+			<li><%= link_to "Events", "/tagged?tag=events" %></li>
+			<li><%= link_to "News", "/tagged?tag=news" %></li>
 			<li>Take Action
 				<ul>
 					<li><%= link_to "Donors", take_action_donors_path %></li>
@@ -50,6 +50,7 @@
 			<li>Resources
 				<ul>
 					<li><%= link_to "Materials", static_path('resources/materials') %></li>
+					<li><%= link_to "Downloads", static_path('resources/downloads') %></li>
 				</ul>
 			</li>
 			<li><%= link_to "Contact", "#" %></li>

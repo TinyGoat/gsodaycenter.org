@@ -1,14 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title> | <%= ENV["site_name"] %></title>
+  <title><%= content_for :title %> | <%= ENV["site_name"] %></title>
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
 </head>
-<body id="internal">
-  <!-- Go to www.addthis.com/dashboard to customize your tools -->
-
+<body id="blogging">
 
   <%= render '/shared/header' %>
 
@@ -24,15 +22,8 @@
 
   <!-- content -->
   <article class="main">
-    <div class="row">
-
-      <aside class="sidebar">
-
-      </aside>
-
-      <article class="leftcolumn">
-        <%= yield %>
-      </article>
+    <div class="row-narrow">
+      <%= yield %>
     </div>
   </article>
 
@@ -42,5 +33,7 @@
 
   <script src="https://use.typekit.net/qws1mey.js"></script>
   <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+  <!-- Go to www.addthis.com/dashboard to customize your tools -->
+  <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-55662a7019e008f7" async="async"></script>
 </body>
 </html>

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title><%= content_for :title %></title>
+  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+  <script src="//use.typekit.net/qws1mey.js"></script>
+  <%= csrf_meta_tags %>
+</head>
+<body id="donors">
+
+  <%= render '/shared/header' %>
+
+  <!-- hero unit -->
+  <section id="hero-unit" class="internal">
+    <div class="content-compact">
+      <h2 class="is-centered position">Donors</h2>
+      <h1 class="brighten is-centered xl">Your donation provides dignity, respect, connection and empowerment to the most forgotten in our community.</h1>
+    </div>
+  </section>
+
+  <!-- content -->
+  <section class="ruled yellow">
+    <div class="content">
+      <h1 class="is-centered">Every day <span class="numerals-xl">200+</span> people walk through our doors. </br>Your support enables us to provide...</h1>
+    </div>
+  </section>
+
+  <section class="ruled">
+  <br>
+    <h1 class="is-centered brighten">
+      So how can I help <strong>today?</strong>
+    </h1>
+
+    <div class="row vertical-room">
+
+      <div class="third has-padding">
+        <div class="icon centered">
+          <%= fa_icon "heart" %>
+        </div>
+        <h2 class="is-centered brighten">One-time donor</h2>
+        <div class="caption">Make a one-time, tax deductible donation to the IRC.</div>
+      </div>
+
+      <div class="third has-padding">
+        <div class="icon centered">
+          <%= fa_icon "history" %>
+        </div>
+        <h2 class="is-centered brighten">Monthly sustainer</h2>
+        <div class="caption">Sustain the IRC's mission month after month without lifting a finger.</div>
+      </div>
+
+      <div class="third has-padding">
+        <div class="icon centered">
+          <%= fa_icon "shield" %>
+        </div>
+        <h2 class="is-centered brighten">Liz Seymour Fund</h2>
+        <div class="caption">Donate to honor the service of our founder Liz Seymour.</div>
+      </div>
+
+    </div>
+
+    <div class="row vertical-room">
+      <div class="third has-padding">
+        <div class="icon centered">
+          <%= fa_icon "ticket" %>
+        </div>
+        <h2 class="is-centered brighten">Honor Cards</h2>
+        <div class="caption">Make a donation in honor of a loved one or special cause.</div>
+      </div>
+
+      <div class="third has-padding">
+        <div class="icon centered">
+          <%= fa_icon "cutlery" %>
+        </div>
+        <h2 class="is-centered brighten">City Market</h2>
+        <div class="caption">Proceeds from City Market benefit the IRC.</div>
+      </div>
+
+      <div class="third has-padding">
+        <div class="icon centered">
+          <%= fa_icon "cubes" %>
+        </div>
+        <h2 class="is-centered brighten">Donating Goods</h2>
+        <div class="caption">Donate items for use in the IRC. For a list of needed items, click here.</div>
+      </div>
+    </div>
+
+  </section>
+
+    <section class="ruled">
+    <div class="row">
+
+      <div class="panel">
+        <div class="caption">
+          <h3>IRC Benefit #1</h3>
+          <h1>Skills</h1>
+          <p>
+            We provide a variety of services to bring people back into the work force. Through partnerships we're able to offer a computer lab and job skills classes. We also help to provide interview clothing, assistance with job applications, and even resume writing help.
+          </p>
+        </div>
+      </div>
+
+      <div class="panel">
+        <div class="caption">
+          <h3>IRC Benefit #2</h3>
+          <h1>Healthcare</h1>
+          <p>
+            Along with our mission of providing daily services, your donations allow us to provide access to a nurse and basic medical services, as well as mental health services. Donations also allow us to provide substance abuse counseling.
+          </p>
+        </div>
+      </div>
+
+      <div class="panel">
+        <div class="caption">
+          <h3>IRC Benefit #3</h3>
+          <h1>Civic Services</h1>
+          <p>
+            We provide a variety of services to bring people back into the work force. Through partnerships we're able to offer a computer lab and job skills classes. We also help to provide interview clothing, assistance with job applications, and even resume writing help.
+          </p>
+        </div>
+      </div>
+
+      <div class="panel">
+        <div class="caption">
+          <h3>IRC Benefit #4</h3>
+          <h1>Fellowship</h1>
+          <p>
+            We provide a variety of services to bring people back into the work force. Through partnerships we're able to offer a computer lab and job skills classes. We also help to provide interview clothing, assistance with job applications, and even resume writing help.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="ruled" id="help">
+    <div class="content">
+      <h1 class="is-centered brighten">
+        Just $10 per person pays for a day of services at the IRC.
+      </h1>
+
+      <div class="actions">
+        <div class="button outline">Become a one-time donor</div>
+        <div class="button outline">Become a sustainer</div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <footer>
+    <%= render '/shared/footer' %>
+  </footer>
+
+  <script src="https://use.typekit.net/qws1mey.js"></script>
+  <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+
+</body>
+</html>

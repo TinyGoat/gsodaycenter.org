@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<% @posts.each do |post| %>
+  <article class="single-post">
+    <h2><%= link_to post.title, post %></h2>
+    <h3 class="date">Posted about <%= distance_of_time_in_words(Time.now, post.created_at) %> ago in
+      <% post.tags.each do |tag| %>
+        <%= link_to tag.name, tagged_url(:tag => tag.name) %>
+      <% end %>
+    </h3>
+    <td><%= post.article.truncate(200, omission: '...') %></td>
+  </article>
+<% end %>
+
+<%= will_paginate @posts %>

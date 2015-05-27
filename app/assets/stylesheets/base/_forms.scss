@@ -24,6 +24,10 @@ label {
   abbr {
     display: none;
   }
+
+  &.inline {
+    display: inline;
+  }
 }
 
 #{$all-text-inputs},

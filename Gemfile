@@ -30,6 +30,7 @@ gem 'clearance'
 gem 'redcarpet'
 gem 'rdiscount'
 gem 'high_voltage',           '~> 2.3.0'
+gem 'acts-as-taggable-on',    '~> 3.5.0'
 
 
 group :development do
