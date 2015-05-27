@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Application | <%= ENV["site_name"] %></title>
+  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body id="internal">
+
+  <%= render '/shared/header' %>
+
+  <!-- hero unit -->
+  <section id="hero-unit" class="internal">
+    <div class="content-compact">
+      <h2 class="is-centered position"><%= yield :title %></h2>
+      <% if content_for :synopsis %>
+        <h1 class="brighten is-centered xl"><%= yield :synopsis %></h1>
+      <% end %>
+    </div>
+  </section>
+
+  <!-- content -->
+  <article class="main">
+    <div class="row">
+
+      <aside class="sidebar">
+
+      </aside>
+
+      <article class="leftcolumn">
+        <%= yield %>
+      </article>
+    </div>
+  </article>
+
+  <footer>
+    <%= render '/shared/footer' %>
+  </footer>
+
+  <script src="https://use.typekit.net/qws1mey.js"></script>
+  <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+
+</body>
+</html>

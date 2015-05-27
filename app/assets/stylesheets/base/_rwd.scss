@@ -1,0 +1,93 @@
+// Responsive styles and strategies
+//
+
+// Containers
+//
+
+.third {
+	@include media($mobile) {
+		@include span-columns(6);
+	}
+	@include media($tablet) {
+		@include span-columns(4);
+	}
+}
+
+// Navigation
+//
+
+.menu-control {
+	position: absolute;
+	top: $small-spacing;
+	left: $small-spacing;
+	font-size: 1.5rem;
+	color: #fff;
+}
+
+#hamburger {
+	@include media($mobile) {
+		position: absolute;
+		top: $small-spacing;
+		left: $small-spacing;
+		font-size: 1.5rem;
+		color: #fff;
+	}
+	@include media($tablet) {
+		display: none;
+	}
+}
+
+#desktop-nav {
+	@include media($mobile) {
+		display: none;
+	}
+	@include media($tablet) {
+		display: block;
+	}
+}
+
+#mobile-nav {
+	@include media($mobile) {
+		display: none;
+		height: 100%;
+		width: 100%;
+		background: $highlight;
+		margin: 0;
+		top: 0;
+		position: absolute;
+		border: 1px solid red;
+
+		#icon {
+			color: #fff;
+			margin: $small-spacing;
+			font-size: 1.5rem;
+		}
+		#menu {
+			a {
+				color: #fff;
+				font-weight: $regular;
+			}
+			ul {
+				overflow: hidden;
+				width: 100% !important;
+				margin: $base-spacing*2 $small-spacing $small-spacing 0;
+				padding: $small-spacing/2;
+				li {
+					display: block;
+					position: relative;
+					width: 100%;
+					padding: $small-spacing;
+					text-align: center;
+					text-transform: uppercase;
+					letter-spacing: 0.15rem;
+					ul {
+						display: none;
+					}
+				}
+			}
+		}
+	}
+	@include media($tablet) {
+		display: none;
+	}
+}

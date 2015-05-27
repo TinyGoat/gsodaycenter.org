@@ -1,0 +1,52 @@
+.content {
+	@include outer-container;
+	padding: $base-spacing;
+
+	&.left {
+		@include span-columns(9 of 12);		
+	}
+	&.left {
+		@include span-columns(9 of 12);		
+	}
+}
+.content-compact {
+	@include outer-container;
+	padding: $small-spacing;
+}
+
+.row {
+	@include outer-container;
+	&.vertical-room {
+		padding: $base-spacing 0 0;
+	}
+}
+
+.third {
+	@include span-columns(4);
+	position: relative;
+	overflow: hidden;
+
+	&.has-padding {
+		padding: $base-spacing;
+	}
+}
+
+.leftcolumn {
+	@include span-columns(8);
+	&.wide {
+		@include span-columns(8);
+		@include shift(2);
+	}
+}
+.sidebar {
+	@include span-columns(4);
+	font-size: 95%;	
+
+	p {
+		color: $medium-gray;
+	}
+
+	h3 {
+		margin-bottom: $small-spacing;
+	}
+}

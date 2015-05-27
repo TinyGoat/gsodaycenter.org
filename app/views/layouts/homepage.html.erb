@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title><%= content_for :title %> | <%= ENV["site_name"] %></title>
+  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+  <%= render '/shared/header' %>
+
+  <!-- hero unit -->
+  <section id="hero-unit" class="lander">
+
+    <div class="content-compact">
+      <h1 class="brighten is-centered xl">The Interactive Resource Center is a refuge for anyone experiencing or who may experience homelessness in Greensboro, NC.</h1>
+    </div>
+
+    <div class="actions">
+      <div class="button outline">
+        Learn More About Us
+      </div>
+      <div class="button outline">
+        Donate Now
+      </div>
+    </div>
+
+    <div class="more">
+      <h5>Read More</h5>
+      <%= fa_icon "chevron-down", :class => "arrow" %>
+    </div>
+
+  </section>
+
+  <!-- content -->
+  <section id="core">
+
+    <div class="content">
+      <h4 class="is-centered xl">We're an innovative day resource center for people experiencing homelessness or trying to keep from becoming homeless in Guilford County, North Carolina.</h4>
+
+    </div>
+
+    <div class="row">
+      <article class="latest">
+        <h4 class="upcase red">Latest News</h4>
+        <h2>Participatory Budgeting at PICNIC</h2>
+        <h3>by byline person</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit.</p>
+      </article>
+      <article class="stories">
+        <h4 class="upcase red">Guest Stories</h4>
+        <h2>Featured Guest Stories</h2>
+        <h3>by byline person</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit.</p>
+      </article>
+      <article class="calendar">
+        <h4 class="upcase red">Events</h4>
+        <div class="event">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+        <div class="event">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- explore -->
+  <section class="explore">
+    <div class="row">
+      <header class="full-width">
+        <h2 class="brighten">Explore the IRC</h2>
+      </header>
+      <div class="third" id="volunteers">
+        <h2><%= fa_icon "flag" %> Volunteers</h2>
+      </div>
+      <div class="third" id="donors">
+        <h2><%= fa_icon "key" %> Donors</h2>
+      </div>
+      <div class="third" id="guests">
+        <h2><%= fa_icon "home" %> Guests</h2>
+      </div>
+    </div>
+  </section>
+
+  <!-- donation roadblock -->
+  <section class="roadblock">
+    <h3>Take Action</h3>
+    <h4>Become a donor today and join the cause.</h4>
+    <button class="right">Donate Now</button>
+  </section>
+
+  <footer>
+    <%= render '/shared/footer' %>
+  </footer>
+
+  <script src="https://use.typekit.net/qws1mey.js"></script>
+  <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+
+
+</body>
+</html>

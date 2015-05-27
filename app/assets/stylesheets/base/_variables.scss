@@ -1,0 +1,54 @@
+// Typography
+$base-font-family: "freight-sans-pro", Helvetica, Roboto, sans;
+$heading-font-family: $base-font-family;
+
+// Font Sizes
+$base-font-size: 1em;
+
+// Font weights
+$light: 300;
+$regular: 400;
+$bold: 600;
+$heavy: 900;
+
+// Line height
+$base-line-height: 1.5;
+$heading-line-height: 1.2;
+
+// Other Sizes
+$base-border-radius: 3px;
+$base-spacing: $base-line-height * 1em;
+$small-spacing: $base-spacing / 2;
+$base-z-index: 0;
+
+// Colors
+$fuschia 		: #FF3751;
+$coral			: #f57566;
+$highlight  : $fuschia;
+$neutral    : #EFEFEA;
+$primary    : #21ABB9;
+$blue       : #477dca;
+$dark-gray  : #333;
+$medium-gray: #999;
+$light-gray : #ddd;
+$med-blue		: #4a525a;
+$purple			: #4F223F;
+$mud				: #B77935;
+$yellow			: #E6D743;
+$mint 			: #3CB36F;
+$orange			:	#E62B1C;
+$wine				: #A32137;
+$lt_purple	: #775299;
+
+// Font Colors
+$base-background-color: #fff;
+$base-font-color: $dark-gray;
+$action-color: $highlight;
+
+// Border
+$base-border-color: $light-gray;
+$base-border: 1px solid $base-border-color;
+
+// Forms
+$form-box-shadow: inset 0 1px 3px rgba(#000, 0.06);
+$form-box-shadow-focus: $form-box-shadow, 0 0 5px adjust-color($action-color, $lightness: -5%, $alpha: -0.3);
