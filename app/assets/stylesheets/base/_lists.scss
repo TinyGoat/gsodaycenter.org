@@ -29,3 +29,10 @@ dl {
     margin: 0;
   }
 }
+
+ul.generic {
+  margin-bottom: $base-spacing;
+  li {
+    font-size: 1.2rem;
+  }
+}

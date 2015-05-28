@@ -5,7 +5,7 @@ body {
 	margin: 0;
 
 	&#internal {
-		background: url('/assets/volunteers.jpg') center -200px no-repeat fixed;
+		background: url('/assets/treeline.jpg') center -200px no-repeat fixed;
 		background-size: cover;
 	}
 
@@ -16,7 +16,7 @@ body {
 
 	&#donors {
 		//background: url('/assets/volunteers.jpg') center -100px no-repeat fixed;
-		background: $mint;
+		background: $primary;
 	}
 }
 

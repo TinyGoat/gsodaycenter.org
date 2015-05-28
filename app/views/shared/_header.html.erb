@@ -25,14 +25,14 @@
 
 	<header id="nav">
     <ul>
-			<li>About
+			<li class="has-subnav">About
 				<ul>
 					<li><%= link_to "Facilities", static_path('about/facilities') %></li>
 					<li><%= link_to "Our Staff", static_path('about/our-staff') %></li>
 					<li><%= link_to "Financials", static_path('about/financials') %></li>
 				</ul>
 			</li>
-			<li>Projects
+			<li class="has-subnav">Projects
 				<ul>
 					<li><%= link_to "Partners", static_path('projects/partners') %></li>
 				</ul>
@@ -40,14 +40,14 @@
 			<li><%= link_to "Daily Services", static_path('daily-services') %></li>
 			<li><%= link_to "Events", "/tagged?tag=events" %></li>
 			<li><%= link_to "News", "/tagged?tag=news" %></li>
-			<li>Take Action
+			<li class="has-subnav">Take Action
 				<ul>
 					<li><%= link_to "Donors", take_action_donors_path %></li>
 					<li><%= link_to "Volunteers", take_action_volunteers_path %></li>
 					<li><%= link_to "Guests", take_action_guests_path %></li>
 				</ul>
 			</li>
-			<li>Resources
+			<li class="has-subnav">Resources
 				<ul>
 					<li><%= link_to "Materials", static_path('resources/materials') %></li>
 					<li><%= link_to "Downloads", static_path('resources/downloads') %></li>
