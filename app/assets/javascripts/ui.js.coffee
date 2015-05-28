@@ -1,7 +1,5 @@
 $ ->
-
-	$('#edit').editable inlineMode: false
-
+	
 	$('#hamburger').click ->
 		$('#mobile-nav').slideToggle(200)
 	$('#close').click ->
