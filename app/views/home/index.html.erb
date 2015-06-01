@@ -1,1 +1,31 @@
-<h1>Homepage</h1>
+<%= content_for :title do %>
+  Home
+<% end %>
+
+  <article class="single-post">
+
+  </article>
+
+<article class="latest">
+  <h4 class="upcase red">Latest News</h4>
+  <h2><%= @news.title %></h2>
+  <p><%= @news.article.truncate(300, omission: "...") %><%= link_to "Read More",  @news %></p>
+</article>
+
+<article class="stories">
+  <h4 class="upcase red">Guest Stories</h4>
+  <h2>Featured Guest Story</h2>
+  <p><%= @guest.article.truncate(300, omission: "...") %><%= link_to "Read More",  @guest %></p>
+</article>
+
+<article class="calendar">
+  <h4 class="upcase red">Events</h4>
+  <% @events.each do |e| %>
+  <div class="event">
+    <div class="icon"><%= fa_icon "calendar" %></div>
+    <h3><%= e.title %></h3>
+    <p><%= e.description.truncate(140, omission: "...") %></p>
+    <em><%= distance_of_time_in_words(e.starts, Time.now) %> away</em>
+  </div>
+  <% end %>
+</article>

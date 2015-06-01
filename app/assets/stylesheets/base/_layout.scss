@@ -38,6 +38,28 @@ article {
 	}
 }
 
+.event {
+	h3 {
+		margin: 0;
+	}
+	p {
+		font-size: 1rem;
+		margin: $small-spacing 0 0;
+		line-height: 1.5;
+	}
+	em {
+		font-style: italic;
+		color: $mint;
+	}
+	.icon {
+		color: $mint;
+		font-size: 2rem;
+		float: right;
+		margin: 0 0 0 $small-spacing;
+	}
+	margin: $small-spacing 0;
+}
+
 #desktop-nav {
 	border-bottom: 1px solid transparentize(#fff, 0.7);
 }

@@ -1,0 +1,44 @@
+<h3 class="admin-date"><%= Time.now.strftime("%B %d, %Y") %></h3>
+<hr/>
+
+  <div class="tweets">
+
+    <% @tweets.each do |tweet| %>
+
+      <div class="tweet-block">
+        <p><%= link_to tweet.text, "https://www.twitter.com/#{tweet.user.screen_name}" %></p>
+        <h5>Tweeted about <strong><%= distance_of_time_in_words(Time.now, tweet.created_at) %></strong> ago</h5>
+      </div>
+
+      <div class="stat-block">
+        <h1><%= tweet.favorite_count %></h1>
+        Favorites
+      </div>
+
+      <div class="stat-block">
+        <h1><%= tweet.retweet_count %></h1>
+        Retweet(s)
+      </div>
+
+    <% end %>
+
+  </div>
+
+  <div class="card pageviews">
+    <div id="chart-wrapper"></div>
+  </div>
+
+  <div class="card news">
+    <h1><%= @news_count.present? ? @news_count : "0" %></h1>
+    <h3>News Posts</h3>
+  </div>
+
+  <div class="card events">
+    <h1><%= @event_count.present? ? @event_count : "0" %></h1>
+    <h3>Event Posts</h3>
+  </div>
+
+  <div class="card users">
+    <h1><%= @user_count.present? ? @user_count : "0" %></h1>
+    <h3>Active Users</h3>
+  </div>

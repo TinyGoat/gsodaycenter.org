@@ -31,7 +31,8 @@ gem 'redcarpet'
 gem 'rdiscount'
 gem 'high_voltage',           '~> 2.3.0'
 gem 'acts-as-taggable-on',    '~> 3.5.0'
-
+gem 'gravatar-ultimate'
+gem 'twitter'
 
 group :development do
   gem 'quiet_assets',         '~> 1.1.0'

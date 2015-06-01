@@ -1,7 +1,7 @@
 class PostsController < ApplicationController
   before_action :set_post, only: [:show, :edit, :update, :destroy]
   before_action :require_login, only: [:new, :edit, :update, :destroy]
-  layout "blogging"
+  layout "admin"
   WillPaginate.per_page = 3
 
   # GET /posts

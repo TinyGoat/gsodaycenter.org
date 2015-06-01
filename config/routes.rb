@@ -1,5 +1,18 @@
 GreensborodaycenterOrg::Application.routes.draw do
 
+  # Root path
+  root to: 'home#index', id: 'home'
+
+  # Blog
+  resources :posts
+
+  # Event manager
+  resources :events
+
+  # Admin dash
+  get '/admin', to: 'admin#index'
+
+  # Clearance
   resources :passwords, controller: 'clearance/passwords', only: [:create, :new]
   resource :session, controller: 'clearance/sessions', only: [:create]
 
@@ -13,16 +26,11 @@ GreensborodaycenterOrg::Application.routes.draw do
   delete '/sign_out' => 'clearance/sessions#destroy', as: 'sign_out'
   get '/sign_up' => 'clearance/users#new', as: 'sign_up'
 
-  # Root path
-  root to: 'home#index', id: 'home'
-
-  # Blog
-  resources :posts
 
   # Handle art-directed pages
-  get "take-action/donors", to: "custom#donors"
-  get "take-action/guests", to: "custom#guests"
-  get "take-action/volunteers", to: "custom#volunteers"
+  get "take-action/donors",       to: "custom#donors"
+  get "take-action/guests",       to: "custom#guests"
+  get "take-action/volunteers",   to: "custom#volunteers"
 
   # Handle tags
   match 'tagged' => 'posts#tagged', :as => 'tagged', :via => :get

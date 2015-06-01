@@ -1,0 +1,19 @@
+<div class="identity">
+  <% if signed_in? %>
+    <li>
+      <% if Gravatar.new(current_user.email).image_url %>
+				<%= image_tag Gravatar.new(current_user.email).image_url, :class => "circle" %>
+			<% else %>
+				<% image_tag "generic-avatar.png", :class => "circle" %>
+			<% end %>
+    </li>
+    <li><%= current_user.email %></li>
+    <li>
+      <%= link_to sign_out_path, method: :delete do %>
+      <%= fa_icon "sign-out" %>
+      <% end %>
+    </li>
+  <% else %>
+    <li><%= link_to "Sign in", sign_in_path %></li>
+  <% end %>
+</div>

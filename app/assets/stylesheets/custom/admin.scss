@@ -1,0 +1,221 @@
+$admin-fonts: Helvetica, Arial, sans-serif !important;
+
+// Admin styles
+body.admin {
+  background: #E6F1F3;
+  padding: 0;
+  margin: 0;
+  font-family: $admin-fonts;
+
+  #overlay {
+    background: transparentize($plum, 0.2);
+    display: none;
+    position: absolute;
+    z-index: 60;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 110%;
+  }
+}
+
+.admin-bar {
+  background: darken(#677577, 20%);
+  overflow: hidden;
+  padding: $small-spacing;
+
+  .identity {
+    overflow: hidden;
+    height: 32px;
+    li {
+      float: left;
+      list-style: none;
+      margin-right: $small-spacing;
+      line-height: 1.6;
+      img {
+        height: 30px;
+      }
+    }
+  }
+
+  .position {
+    float: left;
+    h2 {
+      color: #fff;
+      line-height: 1.25;
+    }
+  }
+
+  .actions {
+    float: right;
+    line-height: 2;
+    color: #E6F1F3;
+  }
+
+  a {
+    color: #efefef;
+  }
+}
+
+.dash-surface {
+  background: #fff;
+  box-shadow: 0 3px 3px darken(#E6F1F3, 15%);
+  margin: $base-spacing;
+  @include outer-container;
+  padding: $base-spacing;
+
+  .tweets {
+    * {
+      font-family: $admin-fonts;
+    }
+    background: lighten($blue, 30%);
+    @include outer-container;
+    padding: $base-spacing;
+    color: $blue;
+    margin-bottom: $base-spacing;
+    border-radius: 6px;
+
+    .tweet-block {
+      @include span-columns(6);
+    }
+    .stat-block {
+      @include span-columns(3);
+      text-align: center;
+      h1 {
+        font-size: 4rem;
+        color: $blue;
+        margin: 0;
+        font-weight: bold;
+      }
+    }
+
+    h3 {
+      margin: 0;
+    }
+    a {
+      color: #fff;
+    }
+  }
+
+  .card {
+    @include span-columns(3);
+    color: #fff;
+    background: #49c5b1;
+    border-radius: 4px;
+
+    &.news {
+      background: $coral;
+    }
+    &.events {
+      background: $plum;
+    }
+    &.pageviews {
+      background: $mint;
+    }
+    &.users {
+      background: $tang;
+    }
+    &.mail {
+      background: $mud;
+    }
+    &.blank {
+      background: #d7d7d7;
+      * {
+        color: #444;
+      }
+    }
+    h1 {
+      text-align: center;
+      font-size: 5rem;
+      font-weight: bold;
+      line-height: 1.12;
+      margin: 8px 0 0 0;
+      color: #fff;
+    }
+    h3 {
+      font-weight: 100;
+      font-size: 1.5rem;
+      line-height: 1;
+      margin: 0 $small-spacing $small-spacing;
+      text-align: center;
+    }
+    *{
+     font-family: Helvetica, Arial, sans-serif !important;
+     }
+  }
+}
+
+
+h3.admin-date {
+  font-family: Helvetica, Arial, sans-serif !important;
+  color: #444;
+  letter-spacing: -0.04rem;
+}
+
+#new {
+  position: fixed;
+  background: $coral;
+  border-radius: 100px;
+  width: 60px;
+  height: 60px;
+  bottom: $base-spacing/2;
+  right: $base-spacing/2;
+  color: #fff;
+  text-align: center;
+  font-weight: 100;
+  font-size: 3rem;
+  line-height: 48px;
+  z-index: 70;
+  cursor: pointer;
+  @include transition(all 0.30s ease-in-out);
+  &.rotate {
+    @include transform(rotate(45deg));
+  }
+}
+
+.admin-modal {
+  background: #E6F1F3;
+  position: absolute;
+  top: -9999px;
+  z-index: 65;
+  width: 400px;
+  margin-left: -200px;
+  left: 50%;
+  box-shadow: 0 3px 8px transparentize(#222, 0.5);
+  @include transition(all 0.6s ease-in-out);
+
+  h3 {
+    background: $mint;
+    color: #fff;
+    padding: $small-spacing;
+    margin: 0;
+  }
+
+  ul {
+    margin: 0;
+    li {
+      border-bottom: 1px solid darken(#E6F1F3, 20%);
+      padding: $small-spacing;
+      font-size: 1rem;
+      font-weight: 500;
+      @include transition(all 0.3s ease-out);
+      &:hover {
+        background: darken(#E6F1F3, 4%);
+      }
+      .tiny-icon {
+        width: 40px;
+        height: 40px;
+        text-align: center;
+        line-height: 40px;
+        border-radius: 100px;
+        background: $coral;
+        margin-right: $small-spacing;
+        color: #fff;
+      }
+    }
+  }
+
+  &.onscreen {
+    top: 20%;
+  }
+}
