@@ -2,7 +2,11 @@
   Our Facilities
 <% end %>
 <%= content_for :synopsis do %>
-  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.
+  A place to be.
 <% end %>
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+The IRC is located in downtown Greensboro, only one block from The Depot.
+The large IRC building is a place for people to come, to congregate, to join in community. Perhaps you have come to take a class, perhaps you have come to get your mail. Perhaps you have come to sit in our dayroom, have a conversation, or just be.
+
+The IRC offers everything from showers facitlities to a computer lab to a mail room to classrooms and meeting spaces. Our building is surrounded by organic, edible gardens that are free for the picking.
+We have turned a formerly industrial lot into a vibrant hub of community activity.
