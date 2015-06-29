@@ -312,6 +312,45 @@ section {
 	}
 }
 
+// Cards ---------------------------------------------------
+//
+
+.cards {
+	@include outer-container;
+
+	.card {
+		@include span-columns(4);
+		@include omega(3n);
+		border: 3px solid $neutral;
+		margin-bottom: $base-spacing;
+
+		.caption {
+			background: $neutral;
+			padding: $small-spacing;
+		}
+
+		h3, p {
+			margin: 0;
+		}
+
+		h3 {
+			font-size: 1rem;
+			line-height: 1.4;
+		}
+
+		p {
+			font-size: 0.8rem;
+			line-height: 1;
+		}
+
+		img {
+			display: block;
+			margin: $base-spacing auto $base-spacing auto;
+			max-height: 90px;
+		}
+	}
+}
+
 // Footer ---------------------------------------------------
 //
 footer {
