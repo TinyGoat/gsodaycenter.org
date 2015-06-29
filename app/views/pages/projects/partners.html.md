@@ -2,7 +2,15 @@
   Partners
 <% end %>
 <%= content_for :synopsis do %>
-  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.
+  The IRC works with community partners to make a "one stop shop" for people needing services.
 <% end %>
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+GTCC offers onsite classes free of charge
+
+TAPM offers free medical service
+
+Share the Harvest redistibutes fresh produce to those in need
+
+Bicycling In Greensboro offers bike repair and bikes for transportation
+
+Cone Health Congregational Nurses offer substance abuse and mental health support

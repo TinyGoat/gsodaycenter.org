@@ -2,7 +2,9 @@
   Financials
 <% end %>
 <%= content_for :synopsis do %>
-  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.
+  Doing a lot on a little.
 <% end %>
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+The IRC started small and hasn't forgotten its roots. Carefully leveraging volunteer hours and partnerships, the IRC has figured out how to do a lot on very little.
+
+ We are financially frugal and take pride in that. We don't duplicate or provide services that are already being done well by our partner agencies. Instead, we come up with innovative, new ideas developed in conjunction with people experiencing homelessness to make straight-forward, dynamic and impactful programs.
