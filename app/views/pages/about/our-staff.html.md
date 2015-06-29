@@ -5,7 +5,7 @@
 
 [Michelle Kennedy](mailto:%6d%69%63%68%65%6c%6c%65%40%67%73%6f%64%61%79%63%65%6e%74%65%72%2e%6f%72%67), Executive Director
 
-[Gwen Frisbie-Fulton](mailto:%67%77%65%6e%40%67%73%6f%64%61%79%63%65%6e%74%65%72%2e%6f%72%67), Director of Community Engagement
+[Shana Carignan](mailto:shana@gsodaycenter.org), Director of Community Engagement
 
 [Jane Enoch](mailto:%6a%61%6e%65%40%67%73%6f%64%61%79%63%65%6e%74%65%72%2e%6f%72%67), Guest Assistance
 
