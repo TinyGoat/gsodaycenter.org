@@ -319,7 +319,7 @@ footer {
 		padding: $base-spacing*2 0;
 	}
 	&#sitemap {
-		background: lighten($primary, 35%);
+		background: #555;
 		.third {
 			padding: 0;
 			p {
@@ -328,7 +328,7 @@ footer {
 		}
 	}
 	&#copyright {
-		background: darken($primary, 10%);
+		background: #444;
 		text-align: center;
 	}
 	a {
