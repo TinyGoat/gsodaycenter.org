@@ -54,6 +54,7 @@ section {
 	margin-top: $base-spacing;
 	margin-bottom: $small-spacing/5;
 	background: transparentize($neutral, 0.2);
+	min-height: 460px;
 
 	h1 {
 		color: #444;

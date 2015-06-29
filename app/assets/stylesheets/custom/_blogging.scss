@@ -17,13 +17,12 @@ ul.tags {
 
 h3.date {
   font-weight: 100;
-  font-family: Georgia, Times, serif;
   font-style: italic;
   font-size: .9rem;
 
   a {
     color: $blue;
-    border: 2px solid $blue;
+    background: $neutral;
     border-radius: 15px;
     padding: 0 8px 3px;
     line-height: 1;
@@ -32,4 +31,6 @@ h3.date {
 
 article.single-post {
   margin-bottom: $base-spacing;
+  border-bottom: 1px dashed darken($neutral, 15%);
+  padding-bottom: $base-spacing;
 }

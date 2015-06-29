@@ -4,6 +4,8 @@
 <p id="notice"><%= notice %></p>
 
 
+<h1><%= @post.title %></h1>
+
 <h3 class="date">Posted about <%= distance_of_time_in_words(Time.now, @post.created_at) %> ago in
   <% @post.tags.each do |tag| %>
     <%= link_to tag.name, tagged_url(:tag => tag.name) %>
@@ -13,6 +15,8 @@
 <p>
   <%= markdown(@post.article) %>
 </p>
+
+<hr>
 
 <div id="disqus_thread"></div>
 <script type="text/javascript">

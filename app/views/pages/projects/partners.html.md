@@ -37,15 +37,15 @@
   <div class="card">
     <%=image_tag('partners/cone-logo.jpg') %>
     <div class="caption">
-      <h3>Cone Health Congregational Nurses</h3>
-      <p>Offer substance abuse and mental health support</p>
+      <h3>Cone Congregational Nurses</h3>
+      <p>Substance abuse and mental health support</p>
     </div>
   </div>
   <div class="card">
     <%=image_tag('partners/tgs-logo.png') %>
     <div class="caption">
       <h3>Tiny Goat</h3>
-      <p>Offers design and development services for nonprofits</p>
+      <p>Design and web services for nonprofits</p>
     </div>
   </div>
 </div>

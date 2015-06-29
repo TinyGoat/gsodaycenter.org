@@ -1,6 +1,9 @@
 <%= content_for :title do %>
   Our Staff
 <% end %>
+<%= content_for :synopsis do %>
+  The soul of the IRC
+<% end %>
 
 
 [Michelle Kennedy](mailto:%6d%69%63%68%65%6c%6c%65%40%67%73%6f%64%61%79%63%65%6e%74%65%72%2e%6f%72%67), Executive Director

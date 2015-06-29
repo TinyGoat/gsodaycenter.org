@@ -7,6 +7,7 @@
 <% end %>
 <!-- end frontmatter -->
 
+
 The IRC is located in downtown Greensboro, only one block from The Depot.
 The large IRC building is a place for people to come, to congregate, to join in community. Perhaps you have come to take a class, perhaps you have come to get your mail. Perhaps you have come to sit in our dayroom, have a conversation, or just be.
 

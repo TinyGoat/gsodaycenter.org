@@ -3,6 +3,8 @@
 <head>
   <title>Donors | <%= ENV["site_name"] %></title>
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+  <script src="https://use.typekit.net/qws1mey.js"></script>
+  <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <script src="//use.typekit.net/qws1mey.js"></script>
   <%= csrf_meta_tags %>
@@ -71,10 +73,10 @@
 
       <div class="third has-padding">
         <div class="icon centered">
-          <%= fa_icon "cutlery" %>
+          <%= fa_icon "shopping-cart" %>
         </div>
-        <h2 class="is-centered brighten">City Market</h2>
-        <div class="caption">Proceeds from City Market benefit the IRC.</div>
+        <h2 class="is-centered brighten">Amazon Smile</h2>
+        <div class="caption">Amazon donates 0.5% of the price of your eligible AmazonSmile purchases to the charitable organization of your choice.</div>
       </div>
 
       <div class="third has-padding">
@@ -152,9 +154,6 @@
   <footer>
     <%= render '/shared/footer' %>
   </footer>
-
-  <script src="https://use.typekit.net/qws1mey.js"></script>
-  <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 
 </body>
 </html>
