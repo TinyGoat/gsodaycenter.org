@@ -33,6 +33,6 @@ As of the latest National, State and Local Index of Food Hardship from the Food 
       - 1 in 5 households in Guilford County regularly do not have enough money to buy food.  
       - 15% or more of our households struggle to buy even the basic necessities.  
       - Only 4 out of 5 people eligible receive SNAP benefits.  
-      - Less than half of eligile children are receiving school breakfast.  
+      - Less than half of eligible children are receiving school breakfast.  
 
 The IRC provides referrals to food pantries, hot meals, and other assistance. Our landscaping is planted entirely with free, edible food for the picking. On site, we also provide location for Share the Harvest and Food Not Bombs, two local organizations addressing hunger.

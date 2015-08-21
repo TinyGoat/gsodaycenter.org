@@ -5,23 +5,117 @@
   The soul of the IRC
 <% end %>
 
+<div class="cards">
+  <div class="staff">
+    <%=image_tag('staff/mk.jpg') %>
+    <div class="caption">
+      <h3><%= mail_to "michelle@gsodaycenter.org", 'Michelle Kennedy' %></h3>
+      <p>Executive Director</p>
+    </div>
+  </div>
 
-[Michelle Kennedy](mailto:%6d%69%63%68%65%6c%6c%65%40%67%73%6f%64%61%79%63%65%6e%74%65%72%2e%6f%72%67), Executive Director
+  <div class="staff">
+    <%=image_tag('staff/sc.jpg') %>
+    <div class="caption">
+      <h3><%= mail_to "shana@gsodaycenter.org", 'Shana Carignan' %></h3>
+      <p>Dir. Community Engagement</p>
+    </div>
+  </div>
 
-[Shana Carignan](mailto:shana@gsodaycenter.org), Director of Community Engagement
+  <div class="staff">
+    <%=image_tag('staff/ke.jpg') %>
+    <div class="caption">
+      <h3><%= mail_to "kathleen@gsodaycenter.org", 'Kathleen Edwards' %></h3>
+      <p>Program Director</p>
+    </div>
+  </div>
 
-[Jane Enoch](mailto:%6a%61%6e%65%40%67%73%6f%64%61%79%63%65%6e%74%65%72%2e%6f%72%67), Guest Assistance
+  <div class="staff">
+    <%=image_tag('staff/bj.jpg') %>
+    <div class="caption">
+      <h3><%= mail_to "brittany@gsodaycenter.org", 'Brittany Johnson' %></h3>
+      <p>Coordinated Intake Specialist</p>
+    </div>
+  </div>
 
-Richardo Cuttino, Warehouse Manager
+  <div class="staff">
+    <%=image_tag('staff/ls.jpg') %>
+    <div class="caption">
+      <h3><%= mail_to "lana@gsodaycenter.org", 'Lana Skrypnyk' %></h3>
+      <p>Administrative Coordinator</p>
+    </div>
+  </div>
 
-[Juanita Davis](mailto:%6a%75%61%6e%69%74%61%40%67%73%6f%64%61%79%63%65%6e%74%65%72%2e%6f%72%67), Front Desk, Americorps
+  <div class="staff">
+    <%=image_tag('staff/dh.jpg') %>
+    <div class="caption">
+      <h3><%= mail_to "donna@gsodaycenter.org", 'Donna Hodges' %></h3>
+      <p>PATH Team Leader</p>
+    </div>
+  </div>
 
-[Tiffany Dumas](mailto:%74%69%66%66%61%6e%79%40%67%73%6f%64%61%79%63%65%6e%74%65%72%2e%6f%72%67), Dayroom Coordinator
+  <div class="staff">
+    <%=image_tag('staff/mf.jpg') %>
+    <div class="caption">
+      <h3><%= mail_to "mitch@gsodaycenter.org", 'Mitch Fryer' %></h3>
+      <p>PATH Benefits Specialist</p>
+    </div>
+  </div>
 
-[Cornelia Montaque](%63%6f%72%6e%65%6c%69%61%40%67%73%6f%64%61%79%63%65%6e%74%65%72%2e%6f%72%67), Administrative Assistant
+  <div class="staff">
+    <%=image_tag('staff/cr.jpg') %>
+    <div class="caption">
+      <h3><%= mail_to "chris@gsodaycenter.org", 'Chris Robinson' %></h3>
+      <p>PATH Case Manager</p>
+    </div>
+  </div>
 
-[Terri Shelton](%74%65%72%72%69%40%67%73%6f%64%61%79%63%65%6e%74%65%72%2e%6f%72%67), Laundry and Showers Coordinator, Americorps
+  <div class="staff">
+    <%=image_tag('staff/td.jpg') %>
+    <div class="caption">
+      <h3><%= mail_to "tiffany@gsodaycenter.org", 'Tiffany Dumas' %></h3>
+      <p>PATH Peer Support Specialist</p>
+    </div>
+  </div>
 
-[Ondrea Mosely](mailto:%6f%6e%64%72%65%61%40%67%73%6f%64%61%79%63%65%6e%74%65%72%2e%6f%72%67), Employment Services Coordinator
+  <div class="staff">
+    <%=image_tag('staff/je.jpg') %>
+    <div class="caption">
+      <h3><%= mail_to "jane@gsodaycenter.org", 'Jane Enoch' %></h3>
+      <p>Guest Assistance</p>
+    </div>
+  </div>
 
-[Lavinia Jackson](mailto:%6c%61%76%69%6e%69%61%40%67%73%6f%64%61%79%63%65%6e%74%65%72%2e%6f%72%67), Veteran Support, VetCorps
+  <div class="staff">
+    <%=image_tag('staff/md.jpg') %>
+    <div class="caption">
+      <h3><%= mail_to "mia@gsodaycenter.org", 'Mia Dixon' %></h3>
+      <p>Day Room Coordinator</p>
+    </div>
+  </div>
+
+  <div class="staff">
+    <%=image_tag('staff/rc.jpg') %>
+    <div class="caption">
+      <h3>Richardo Cuttino</h3>
+      <p>Warehouse Manager</p>
+    </div>
+  </div>
+
+  <div class="staff">
+    <%=image_tag('staff/rs.jpg') %>
+    <div class="caption">
+      <h3><%= mail_to "randy@gsodaycenter.org", 'Randy Southerland' %></h3>
+      <p>Facilities Coordinator</p>
+    </div>
+  </div>
+
+  <div class="staff">
+    <%=image_tag('staff/cm.jpg') %>
+    <div class="caption">
+      <h3><%= mail_to "cornelia@gsodaycenter.org", 'Cornelia Montaque' %></h3>
+      <p>Guest Administrative Assistant</p>
+    </div>
+  </div>
+  
+</div>
