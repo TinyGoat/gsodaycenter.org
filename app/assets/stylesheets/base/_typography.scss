@@ -119,7 +119,12 @@ picture {
 }
 .is-centered {
   text-align: center;
+
+  a {
+    color: #fff;
+  }
 }
+
 .upcase {
   text-transform: uppercase;
   letter-spacing: 0.12rem;
