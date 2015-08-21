@@ -6,3 +6,19 @@
 		color: $yellow;
 	}
 }
+
+.icon-xl {
+	@include span-columns(4);
+	@include omega(3n);
+	margin-bottom: $base-spacing;
+	text-align: center;
+
+	img {
+		display: block;
+		margin: 0 auto $small-spacing auto;
+	}
+
+	p {
+		font-size: .9rem;
+	}
+}
