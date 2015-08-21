@@ -6,6 +6,7 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
+# Event
 # t.string   "title"
 # t.date     "starts"
 # t.date     "ends"
@@ -19,5 +20,13 @@
 # t.integer  "lon"
 # t.datetime "created_at",  null: false
 # t.datetime "updated_at",  null: false
+
+# Post
+# t.string   "title"
+# t.text     "article"
+# t.boolean  "draft"
+# t.datetime "created_at", null: false
+# t.datetime "updated_at", null: false
+# t.string   "slug"
 
 Event.create(title: "test", description: "A test event", starts: "2015-11-29", ends: "2015-11-30")
