@@ -1,14 +1,5 @@
 <%= content_for :title do %>
-  Downloads
+  Donating Goods
 <% end %>
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-
-<h2>Infographics</h2>
-  <ul>
-    <li><%=link_to "How far $10 a day goes at the IRC", "/10aDay.pdf" %></li>
-    <li><%=link_to "What the IRC Does & How", "/communityworks.pdf" %></li>
-    <li><%=link_to "Snapshot of a single day at the IRC", "/SingleDay.pdf" %></li>
-    <li><%=link_to "Where does our funding come from?", "/financials_support.pdf" %></li>
-    <li><%=link_to "Day services for homeless veterans at the IRC", "/veteranservices.pdf" %></li>
-  </ul>  
