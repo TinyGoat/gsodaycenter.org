@@ -17,7 +17,7 @@
     <%=image_tag('partners/tapm-logo.png') %>
     <div class="caption">
       <h3><%= link_to 'TAPM', "http://www.tapmedicine.com/" %></h3>
-      <p>Offers free medical services to patients of all ages</p>
+      <p>Offers free services to patients of all ages</p>
     </div>
   </div>
   <div class="card">
@@ -44,7 +44,7 @@
   <div class="card">
     <%=image_tag('partners/tgs-logo.png') %>
     <div class="caption">
-      <h3><%= link_to 'Tiny Goat', "http://www.tinygoatstudio.com" %>we</h3>
+      <h3><%= link_to 'Tiny Goat', "http://www.tinygoatstudio.com" %></h3>
       <p>Design and web services for nonprofits</p>
     </div>
   </div>

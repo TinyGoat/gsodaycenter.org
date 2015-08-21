@@ -365,9 +365,10 @@ section {
 
 		img {
 			position: absolute;
-			top: 0;
+			top: -$base-spacing;
 			left: 0;
-			max-height: 100%;
+			width: 288px;
+			max-height: 115%;
 			margin: 0;
 		}
 	}
