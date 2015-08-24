@@ -10,7 +10,7 @@
     <%=image_tag('partners/gtcc_360.png') %>
     <div class="caption">
       <h3><%= link_to 'GTCC', "http://home.gtcc.edu" %></h3>
-      <p>Offers onsite classes free of charge</p>
+      <p>Offers onsite, adult education classes free of charge</p>
     </div>
   </div>
   <div class="card">

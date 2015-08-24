@@ -19,6 +19,13 @@ button,
   vertical-align: middle;
   white-space: nowrap;
 
+  a {
+    color: #fff;
+    &:hover {
+      color: yellow;
+    }
+  }
+
   &:hover,
   &:focus {
     background-color: darken($action-color, 15%);

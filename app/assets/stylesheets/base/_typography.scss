@@ -122,6 +122,9 @@ picture {
 
   a {
     color: #fff;
+    &:hover {
+      color: yellow;
+    }
   }
 }
 
