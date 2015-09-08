@@ -23,10 +23,10 @@
 
     <div class="actions">
       <div class="button outline">
-        Learn More About Us
+        <%= link_to 'Learn More About Us', '/about/facilities' %>
       </div>
       <div class="button outline">
-        Donate Now
+        <%= link_to 'Donate Now', '/take-action/donors' %>
       </div>
     </div>
 
@@ -57,13 +57,13 @@
         <h2 class="brighten">Explore the IRC</h2>
       </header>
       <div class="third" id="volunteers">
-        <h2><%= fa_icon "flag" %> Volunteers</h2>
+        <h2><%= fa_icon "flag" %> <%= link_to 'Volunteers', '/take-action/volunteers' %> </h2>
       </div>
       <div class="third" id="donors">
-        <h2><%= fa_icon "key" %> Donors</h2>
+        <h2><%= fa_icon "key" %> <%= link_to 'Donate', '/take-action/donors' %> </h2>
       </div>
       <div class="third" id="guests">
-        <h2><%= fa_icon "home" %> Guests</h2>
+        <h2><%= fa_icon "home" %> <%= link_to 'Guests', '/take-action/guests' %> </h2>
       </div>
     </div>
   </section>
