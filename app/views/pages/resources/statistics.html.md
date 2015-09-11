@@ -2,7 +2,7 @@
   Statistics
 <% end %>
 <%= content_for :synopsis do %>
-  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.
+  Important facts about homelessness in Greensboro
 <% end %>
 
 ##Homelessness in Greensboro

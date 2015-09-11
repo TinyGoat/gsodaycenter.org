@@ -1,0 +1,59 @@
+<!-- set page name and synopsis here -->
+<%= content_for :title do %>
+  Contact Us
+<% end %>
+<%= content_for :synopsis do %>
+  Get in touch.
+<% end %>
+
+<!-- end frontmatter -->
+
+<div class="row">
+  <div class="third">
+  <h4>Where you can find us</h4>
+  <ul>
+    <li>407 E Washington Street</li>
+    <li>Greensboro, NC 27401</li>
+    <li><em>Please use this address for IRC guest mail</em></li>
+  </ul>
+  <h4>Mailing address</h4>
+  <ul>
+    <li>P.O. Box 20568</li>
+    <li>Greensboro, NC 27420</li>
+    <li><em>Not for IRC guest mail</em></li>
+  </ul>
+  </div>
+
+  <div class="third">
+  <h4>Hours</h4>
+  <ul>
+    <li>The IRC is open 365 days a year</li>
+    <li>Monday - Friday 8am - 3pm</li>
+    <li>Saturday &amp; Sunday 8am - 2pm</li>
+  </ul>
+  </div>
+
+  <div class="third">
+  <h4>Connect with us</h4>
+  <ul class="threeup">
+    <li>
+      <%=fa_icon "envelope" %>
+      Email <%=mail_to "shana@gsodaycenter.org", "Shana Carignan" %> with any questions/comments.</li>
+    <li>
+      <%=link_to "https://www.facebook.com/gsodaycenter?fref=ts&ref=br_tf" do %>
+        <%=fa_icon "facebook", :class => "squared" %>
+      <% end %>
+    </li>
+    <li>
+      <%=link_to "https://twitter.com/gsodaycenter" do %>
+        <%=fa_icon "twitter", :class => "squared" %>
+      <% end %>
+    </li>
+    <li>
+      <%=link_to "https://instagram.com/gsodaycenter/" do %>
+        <%=fa_icon "instagram", :class => "squared" %>
+      <% end %>
+    </li>
+  </ul>
+  </div>
+<div class="row">

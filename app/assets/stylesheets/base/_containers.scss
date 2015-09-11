@@ -9,6 +9,7 @@
 		@include span-columns(9 of 12);
 	}
 }
+
 .content-compact {
 	@include outer-container;
 	padding: $small-spacing;
@@ -19,10 +20,42 @@
 	&.vertical-room {
 		padding: $base-spacing 0 0;
 	}
+	&.narrow {
+		@include outer-container(40%);
+	}
 }
 
 .third {
 	@include span-columns(4);
+	position: relative;
+	overflow: hidden;
+
+	h4 {
+		color: $primary;
+		line-height: 1;
+		margin: $small-spacing 0;
+		text-transform: uppercase;
+	}
+
+	ul {
+		li {
+
+			em {
+				font-style: italic;
+				color: $primary;
+				font-size: .75rem;
+			}
+		}
+	}
+
+	&.has-padding {
+		padding: $base-spacing;
+	}
+}
+
+.fourth {
+	@include span-columns(3);
+	@include omega(4n);
 	position: relative;
 	overflow: hidden;
 

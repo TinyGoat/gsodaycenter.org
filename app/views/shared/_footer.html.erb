@@ -1,28 +1,41 @@
 <footer id="sitemap">
-	<div class="row">
+	<div class="row narrow">
 		<div class="third">
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			<ul class="footer">
+				<li><%= link_to "Home", root_path %></li>
+				<li>About
+					<ul>
+						<li><%= link_to "Facilities", static_path('about/facilities') %></li>
+						<li><%= link_to "Our Staff", static_path('about/our-staff') %></li>
+						<li><%= link_to "Financials", static_path('about/financials') %></li>
+					</ul>
+				</li>
+				<li><%= link_to "Daily Services", static_path('daily-services') %></li>
+			</ul>
 		</div>
 		<div class="third">
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			<ul class="footer">
+				<li><%= link_to "Events", "/tagged?tag=events" %></li>
+				<li><%= link_to "News", "/tagged?tag=news" %></li>
+				<li>Take Action
+					<ul>
+						<li><%= link_to "Donors", take_action_donors_path %></li>
+						<li><%= link_to "Volunteers", take_action_volunteers_path %></li>
+						<li><%= link_to "Guests", take_action_guests_path %></li>
+					</ul>
+				</li>
+			</ul>
 		</div>
 		<div class="third">
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			<ul class="footer">
+				<li>Resources
+					<ul>
+						<li><%= link_to "Statistics", static_path('resources/statistics') %></li>
+						<li><%= link_to "Downloads", static_path('resources/downloads') %></li>
+					</ul>
+				</li>
+				<li><%= link_to "Contact", "/contact" %></li>
+			</ul>
 		</div>
 	</div>
 </footer>

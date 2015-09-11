@@ -1,8 +1,10 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:400,300,700);
+
 body {
   @include font-feature-settings("kern", "liga", "pnum");
   -webkit-font-smoothing: antialiased;
   color: $base-font-color;
-  font-family: $base-font-family;
+  font-family: "Lato", $base-font-family;
   font-size: $base-font-size;
   line-height: $base-line-height;
 }
@@ -13,7 +15,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: $heading-font-family;
+  font-family: "Lato", $heading-font-family;
   font-size: $base-font-size;
   line-height: $heading-line-height;
   margin: 0;
