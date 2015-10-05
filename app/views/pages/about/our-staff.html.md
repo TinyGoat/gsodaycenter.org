@@ -18,7 +18,7 @@
     <%=image_tag('staff/sc.jpg') %>
     <div class="caption">
       <h3><%= mail_to "shana@gsodaycenter.org", 'Shana Carignan' %></h3>
-      <p>Dir. Community Engagement</p>
+      <p>Development Director</p>
     </div>
   </div>
 
@@ -26,7 +26,7 @@
     <%=image_tag('staff/ke.jpg') %>
     <div class="caption">
       <h3><%= mail_to "kathleen@gsodaycenter.org", 'Kathleen Edwards' %></h3>
-      <p>Program Director</p>
+      <p>Director of Programs</p>
     </div>
   </div>
 
@@ -95,14 +95,6 @@
   </div>
 
   <div class="staff">
-    <%=image_tag('staff/rc.jpg') %>
-    <div class="caption">
-      <h3>Richardo Cuttino</h3>
-      <p>Warehouse Manager</p>
-    </div>
-  </div>
-
-  <div class="staff">
     <%=image_tag('staff/rs.jpg') %>
     <div class="caption">
       <h3><%= mail_to "randy@gsodaycenter.org", 'Randy Southerland' %></h3>
@@ -117,5 +109,5 @@
       <p>Guest Administrative Assistant</p>
     </div>
   </div>
-  
+
 </div>
