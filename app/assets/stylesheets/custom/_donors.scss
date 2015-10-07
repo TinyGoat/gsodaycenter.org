@@ -6,12 +6,17 @@ section {
 	&.trans {
 		background: transparent;
 	}
+
 	&.ruled {
 		background: $neutral image-url('irc-front.jpg') center center no-repeat fixed;
 		background-size: cover;
-		//border-top: 1px solid darken($neutral, 10%);
-		//border-right: 0;
-		//border-left: 0;
+
+		.benefits {
+			@extend .row;
+			background: $neutral;
+			@include outer-container(100%);
+			padding: 0 $base-spacing*8 $base-spacing;
+		}
 
 		.actions {
 			@include span-columns(8 of 12);
@@ -49,21 +54,28 @@ section {
 }
 
 .panel {
-	@include span-columns(3);
+	@include span-columns(6);
+	@include omega(2n);
 	padding: $base-spacing;
 	margin-top: $base-spacing;
 	margin-bottom: $small-spacing/5;
-	background: transparentize($neutral, 0.2);
-	min-height: 460px;
+	background: #fff;
+	border-bottom: 1px solid darken($neutral, 20%);
+	border-right: 1px solid darken($neutral, 20%);
 
 	h1 {
 		color: #444;
 		line-height: 1;
 		margin: $small-spacing/2 0;
+		font-size: 2rem;
 	}
 	h3 {
+		color: #222;
 		margin: 0;
-		color: $blue;
 		font-size: .9rem;
+	}
+	p {
+		font-size: 1rem;
+		color: #222;
 	}
 }
