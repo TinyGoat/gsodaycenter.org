@@ -10,14 +10,20 @@
 						<li><%= link_to "Financials", static_path('about/financials') %></li>
 					</ul>
 				</li>
-
+				<li><%= link_to "Daily Services", static_path('daily-services') %></li>
 			</ul>
 		</div>
 		<div class="third">
 			<ul class="footer">
-				<li><%= link_to "Daily Services", static_path('daily-services') %></li>
+
 				<!--<li><%= link_to "Events", "/tagged?tag=events" %></li>
 				<li><%= link_to "News", "/tagged?tag=news" %></li>-->
+				<li>Projects
+					<ul>
+						<li><%= link_to "Partners", static_path('projects/partners') %></li>
+						<li><%= link_to "IRC Programs", take_action_guests_path %></li>
+					</ul>
+				</li>
 				<li>Take Action
 					<ul>
 						<li><%= link_to "Donors", take_action_donors_path %></li>
