@@ -87,6 +87,13 @@
 .vols {
 	margin-bottom: $base-spacing;
 
+	h4 {
+		color: $primary;
+  	line-height: 1;
+  	margin: $small-spacing 0;
+  	text-transform: uppercase;
+	}
+
 	.third {
 		margin-bottom: $base-spacing;
 	}
