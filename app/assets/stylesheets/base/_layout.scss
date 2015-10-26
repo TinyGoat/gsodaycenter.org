@@ -260,7 +260,7 @@ section {
 			font-size: 1rem;
 		}
 
-		
+
 
 		h3, h4 {
 			display: inline-block;
@@ -328,12 +328,23 @@ section {
 
 .cards {
 	@include outer-container;
+	@include clearfix;
 
 	.card {
-		@include span-columns(4);
-		@include omega(3n);
 		border: 3px solid $neutral;
 		margin-bottom: $base-spacing;
+
+		@include media($mobile) {
+			@include span-columns(4);
+		}
+		@include media($tablet) {
+			@include span-columns(4);
+			@include omega(2n);
+		}
+		@include media($desktop) {
+			@include span-columns(4);
+			@include omega(3n);
+		}
 
 		.caption {
 			background: $neutral;
@@ -360,27 +371,29 @@ section {
 			max-height: 90px;
 		}
 	}
-	.staff {
-		@extend .card;
-		overflow: hidden !important;
-		position: relative;
-		min-height: 320px;
 
-		.caption {
-			position: absolute;
-			bottom: 0;
-			left: 0;
-			z-index: 99;
-			width: 100%;
+	.avatar {
+
+		@include media($mobile) {
+			@include span-columns(4);
+		}
+		@include media($tablet) {
+			@include span-columns(4);
+			@include omega(2n);
+		}
+		@include media($desktop) {
+			@include span-columns(4);
+			@include omega(3n);
 		}
 
-		img {
-			position: absolute;
-			top: -$base-spacing;
-			left: 0;
-			width: 288px;
-			max-height: 115%;
-			margin: 0;
+		.caption {
+			margin-top: $small-spacing;
+			h3 {
+				margin: 0;
+			}
+			p {
+				color: $medium-gray;
+			}
 		}
 	}
 }

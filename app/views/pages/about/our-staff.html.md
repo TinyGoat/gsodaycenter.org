@@ -6,7 +6,7 @@
 <% end %>
 
 <div class="cards">
-  <div class="staff">
+  <div class="avatar">
     <%=image_tag('staff/mk.jpg') %>
     <div class="caption">
       <h3><%= mail_to "michelle@gsodaycenter.org", 'Michelle Kennedy' %></h3>
@@ -14,7 +14,7 @@
     </div>
   </div>
 
-  <div class="staff">
+  <div class="avatar">
     <%=image_tag('staff/sc.jpg') %>
     <div class="caption">
       <h3><%= mail_to "shana@gsodaycenter.org", 'Shana Carignan' %></h3>
@@ -22,7 +22,7 @@
     </div>
   </div>
 
-  <div class="staff">
+  <div class="avatar">
     <%=image_tag('staff/ke.jpg') %>
     <div class="caption">
       <h3><%= mail_to "kathleen@gsodaycenter.org", 'Kathleen Edwards' %></h3>
@@ -30,7 +30,7 @@
     </div>
   </div>
 
-  <div class="staff">
+  <div class="avatar">
     <%=image_tag('staff/bj.jpg') %>
     <div class="caption">
       <h3><%= mail_to "brittany@gsodaycenter.org", 'Brittany Johnson' %></h3>
@@ -38,7 +38,7 @@
     </div>
   </div>
 
-  <div class="staff">
+  <div class="avatar">
     <%=image_tag('staff/ls.jpg') %>
     <div class="caption">
       <h3><%= mail_to "lana@gsodaycenter.org", 'Lana Skrypnyk' %></h3>
@@ -46,7 +46,7 @@
     </div>
   </div>
 
-  <div class="staff">
+  <div class="avatar">
     <%=image_tag('staff/dh.jpg') %>
     <div class="caption">
       <h3><%= mail_to "donna@gsodaycenter.org", 'Donna Hodges' %></h3>
@@ -54,7 +54,7 @@
     </div>
   </div>
 
-  <div class="staff">
+  <div class="avatar">
     <%=image_tag('staff/mf.jpg') %>
     <div class="caption">
       <h3><%= mail_to "mitch@gsodaycenter.org", 'Mitch Fryer' %></h3>
@@ -62,7 +62,7 @@
     </div>
   </div>
 
-  <div class="staff">
+  <div class="avatar">
     <%=image_tag('staff/cr.jpg') %>
     <div class="caption">
       <h3><%= mail_to "chris@gsodaycenter.org", 'Chris Robinson' %></h3>
@@ -70,7 +70,7 @@
     </div>
   </div>
 
-  <div class="staff">
+  <div class="avatar">
     <%=image_tag('staff/td.jpg') %>
     <div class="caption">
       <h3><%= mail_to "tiffany@gsodaycenter.org", 'Tiffany Dumas' %></h3>
@@ -78,7 +78,7 @@
     </div>
   </div>
 
-  <div class="staff">
+  <div class="avatar">
     <%=image_tag('staff/je.jpg') %>
     <div class="caption">
       <h3><%= mail_to "jane@gsodaycenter.org", 'Jane Enoch' %></h3>
@@ -86,7 +86,7 @@
     </div>
   </div>
 
-  <div class="staff">
+  <div class="avatar">
     <%=image_tag('staff/md.jpg') %>
     <div class="caption">
       <h3><%= mail_to "mia@gsodaycenter.org", 'Mia Dixon' %></h3>
@@ -94,7 +94,7 @@
     </div>
   </div>
 
-  <div class="staff">
+  <div class="avatar">
     <%=image_tag('staff/cm.jpg') %>
     <div class="caption">
       <h3><%= mail_to "cornelia@gsodaycenter.org", 'Cornelia Montaque' %></h3>
