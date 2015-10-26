@@ -10,13 +10,14 @@
 						<li><%= link_to "Financials", static_path('about/financials') %></li>
 					</ul>
 				</li>
-				<li><%= link_to "Daily Services", static_path('daily-services') %></li>
+
 			</ul>
 		</div>
 		<div class="third">
 			<ul class="footer">
-				<li><%= link_to "Events", "/tagged?tag=events" %></li>
-				<li><%= link_to "News", "/tagged?tag=news" %></li>
+				<li><%= link_to "Daily Services", static_path('daily-services') %></li>
+				<!--<li><%= link_to "Events", "/tagged?tag=events" %></li>
+				<li><%= link_to "News", "/tagged?tag=news" %></li>-->
 				<li>Take Action
 					<ul>
 						<li><%= link_to "Donors", take_action_donors_path %></li>
@@ -44,6 +45,18 @@
 		<p>
       Copyright <%= Time.now.year %> Greensboro Day Center
 		</p>
+		<p>
+	      <%=link_to "https://www.facebook.com/gsodaycenter?fref=ts&ref=br_tf" do %>
+	        <%=fa_icon "facebook", :class => "squared" %>
+	      <% end %>
+	  	      <%=link_to "https://twitter.com/gsodaycenter" do %>
+	        <%=fa_icon "twitter", :class => "squared" %>
+	      <% end %>
+
+	      <%=link_to "https://instagram.com/gsodaycenter/" do %>
+	        <%=fa_icon "instagram", :class => "squared" %>
+	      <% end %>
+	  </p>
 		<p>Designed and built with <%= fa_icon "heart", :class => "red" %> by <%=link_to "Tiny Goat Studio", "http://www.tinygoatstudio.com", :target => "blank" %> in Greensboro</p>
 	</div>
 </footer>
