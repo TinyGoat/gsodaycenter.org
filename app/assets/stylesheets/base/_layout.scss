@@ -152,12 +152,31 @@ section {
 		background-size: cover;
 		position: relative;
 
+		@include media($desktop, $largedesktop) {
+			min-height: 800px !important;
+		}
+		@include media($tablet) {
+			min-height: 600px !important;
+		}
+
+		@include media($mobile) {
+			min-height: 500px !important;
+			h1 {
+				font-size: 2rem;
+			}
+		}
+
 		.actions {
-			@include span-columns(6);
-			@include shift(3);
+			@include outer-container(70%);
 
 			.button {
 				@include span-columns(6);
+
+				@include media($mobile) {
+					@include span-columns(4);
+					margin-bottom: $small-spacing
+				}
+
 				text-align: center;
 				@include transition(all 0.20s ease-in-out);
 
@@ -174,6 +193,18 @@ section {
 			color: transparentize(#fff, 0.6);
 			bottom: $base-spacing*4;
 			left: 46%;
+
+			@include media($desktop, $largedesktop) {
+				display: block;
+			}
+
+			@include media($tablet) {
+				display: none !important;
+			}
+
+			@include media($mobile) {
+				display: none !important;
+			}
 		}
 
 		&.internal {
@@ -202,6 +233,7 @@ section {
 	&#core {
 		margin-top: -$base-spacing*1.4;
 		background: $neutral;
+
 		.row {
 			background: $neutral;
 			padding-bottom: $base-spacing;
@@ -213,48 +245,26 @@ section {
 				}
 			}
 		}
-		.latest {
-			@include media($mobile) {
-				@include span-columns(6);
-				padding: $base-spacing;
-			}
-			@include media($desktop, $largedesktop) {
-				@include span-columns(5);
-				margin-top: $base-spacing;
-				padding: 0 $base-spacing;
-			}
-		}
-		.stories {
-			@include media($mobile) {
-				@include span-columns(6);
-				padding: $base-spacing;
-			}
-			@include media($desktop, $largedesktop) {
-				@include span-columns(4);
-				margin-top: $base-spacing;
-				padding: 0 $base-spacing;
-			}
-		}
-		.calendar {
-			@include media($mobile) {
-				@include span-columns(6);
-				padding: $base-spacing;
-			}
-			@include media($desktop, $largedesktop) {
-				@include span-columns(3);
-				margin-top: $base-spacing;
-				padding: 0 $base-spacing;
-			}
-		}
 	}
 
 	// Donation roadblock
 	&.roadblock {
 		background: $neutral;
-		@include outer-container(40%);
 		padding: $small-spacing;
 		margin-bottom: $base-spacing;
 		text-align: center;
+
+		@include media($desktop, $largedesktop) {
+			@include outer-container(40%);
+		}
+
+		@include media($mobile) {
+			@include outer-container(90%);
+		}
+		@include media($tablet) {
+			@include outer-container(90%);
+		}
+
 
 		p {
 			font-size: 1rem;
