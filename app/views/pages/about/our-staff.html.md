@@ -95,14 +95,6 @@
   </div>
 
   <div class="staff">
-    <%=image_tag('staff/rs.jpg') %>
-    <div class="caption">
-      <h3><%= mail_to "randy@gsodaycenter.org", 'Randy Southerland' %></h3>
-      <p>Facilities Coordinator</p>
-    </div>
-  </div>
-
-  <div class="staff">
     <%=image_tag('staff/cm.jpg') %>
     <div class="caption">
       <h3><%= mail_to "cornelia@gsodaycenter.org", 'Cornelia Montaque' %></h3>

@@ -84,7 +84,7 @@
     </div>
   </div>
   <div class="card">
-    <%=image_tag('partners/cswei.png') %>
+    <%=image_tag('partners/cswei.jpg') %>
     <div class="caption">
       <h3><%= link_to 'CSWEI', "http://hhs.uncg.edu/wordpress/swk/cswei/" %></h3>
       <p>NCAT and UNCG offer students a non-traditional opportunity to complete their internship requirements by providing community-based social work services to Greensboro area congregants/residents.</p>
