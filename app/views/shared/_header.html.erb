@@ -9,9 +9,22 @@
 		<%= fa_icon "times-circle" %>
 	</div>
 	<div id="links">
-    <ul>
-      <li><%= link_to "Home", root_path %></li>
-    </ul>
+			<h4>Interactive Resource Center</h4>
+			<hr>
+			<ul>
+				<li><%= link_to "Home", "/" %></li>
+				<li><%= link_to "Facilities", static_path('about/facilities') %></li>
+				<li><%= link_to "Our Staff", static_path('about/our-staff') %></li>
+				<li><%= link_to "Financials", static_path('about/financials') %></li>
+				<li><%= link_to "Partners", static_path('projects/partners') %></li>
+				<li><%= link_to "IRC Programs", take_action_guests_path %></li>
+				<li><%= link_to "Donors", take_action_donors_path %></li>
+				<li><%= link_to "Volunteers", take_action_volunteers_path %></li>
+				<li><%= link_to "Guests", take_action_guests_path %></li>
+				<li><%= link_to "Statistics", static_path('resources/statistics') %></li>
+				<li><%= link_to "Downloads", static_path('resources/downloads') %></li>
+				<li><%= link_to "Contact", "/contact" %></li>
+  	</ul>
 	</div>
 </div>
 <!-- /mobile-nav -->

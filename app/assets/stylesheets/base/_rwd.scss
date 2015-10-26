@@ -22,6 +22,7 @@
 	left: $small-spacing;
 	font-size: 1.5rem;
 	color: #fff;
+	z-index: 70;
 }
 
 #hamburger {
@@ -55,36 +56,26 @@
 		margin: 0;
 		top: 0;
 		position: absolute;
-		border: 1px solid red;
+		z-index: 80;
+
+		h4 {
+			color: transparentize(#fff, 0.5);
+		}
+
+		#links {
+			margin: $base-spacing*4;
+			li {
+				font-size: 1.4rem;
+				a {
+					color: #fff;
+				}
+			}
+		}
 
 		#icon {
 			color: #fff;
 			margin: $small-spacing;
 			font-size: 1.5rem;
-		}
-		#menu {
-			a {
-				color: #fff;
-				font-weight: $regular;
-			}
-			ul {
-				overflow: hidden;
-				width: 100% !important;
-				margin: $base-spacing*2 $small-spacing $small-spacing 0;
-				padding: $small-spacing/2;
-				li {
-					display: block;
-					position: relative;
-					width: 100%;
-					padding: $small-spacing;
-					text-align: center;
-					text-transform: uppercase;
-					letter-spacing: 0.15rem;
-					ul {
-						display: none;
-					}
-				}
-			}
 		}
 	}
 	@include media($tablet) {
