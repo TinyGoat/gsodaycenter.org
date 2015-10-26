@@ -1,5 +1,7 @@
 $ ->
 
+	console.log "Foo"
+	
 	$('#hamburger').click ->
 		$('#mobile-nav').slideToggle(200)
 	$('#close').click ->
