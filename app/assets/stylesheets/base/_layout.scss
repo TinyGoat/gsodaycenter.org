@@ -439,14 +439,14 @@ footer {
 //
 
 #blocker {
-	background: $blue;
+	background: darken($blue, 30%);
 	width: 100%;
-	color: #fff;
+	color: $fuschia;
 	line-height: 3;
 	padding: 0 $base-spacing;
 	text-align: center;
 	a {
-		color: #fff;
-		border-bottom: 1px solid #fff;
+		color: $fuschia;
+		border-bottom: 1px solid $fuschia;
 	}
 }
