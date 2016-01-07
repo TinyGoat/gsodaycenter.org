@@ -5,7 +5,7 @@ body {
 	margin: 0;
 
 	&#internal {
-		background: url('/assets/treeline.jpg') center -200px no-repeat fixed;
+		background: url('/assets/treeline-002.png') center -200px no-repeat fixed;
 		background-size: cover;
 	}
 
@@ -148,13 +148,15 @@ section {
 
 	// Primary hero unit
 	//
+	&#hero-unit.lander {
+		@include media($desktop, $largedesktop) {
+			min-height: 800px !important;
+		}
+	}
 	&#hero-unit {
 		background-size: cover;
 		position: relative;
 
-		@include media($desktop, $largedesktop) {
-			min-height: 600px !important;
-		}
 		@include media($tablet) {
 			min-height: 600px !important;
 		}
