@@ -153,7 +153,7 @@ section {
 		position: relative;
 
 		@include media($desktop, $largedesktop) {
-			min-height: 800px !important;
+			min-height: 600px !important;
 		}
 		@include media($tablet) {
 			min-height: 600px !important;
@@ -430,5 +430,21 @@ footer {
 	}
 	a {
 		color: $yellow;
+	}
+}
+
+// Emergency banner ---------------------------------------------------
+//
+
+#blocker {
+	background: $blue;
+	width: 100%;
+	color: #fff;
+	line-height: 3;
+	padding: 0 $base-spacing;
+	text-align: center;
+	a {
+		color: #fff;
+		border-bottom: 1px solid #fff;
 	}
 }
