@@ -14,6 +14,7 @@
     </div>
   </div>
   <div class="card">
+    <%=image_tag('partners/fsp.png') %>
     <div class="caption">
       <h3><%= link_to 'Family Services of the Piedmont', "http://www.safeandhealthyfamilies.com" %></h3>
       <p>Offers free services to patients of all ages</p>
