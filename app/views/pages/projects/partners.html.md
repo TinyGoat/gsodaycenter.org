@@ -14,9 +14,8 @@
     </div>
   </div>
   <div class="card">
-    <%=image_tag('partners/tapm-logo.png') %>
     <div class="caption">
-      <h3><%= link_to 'TAPM', "http://www.tapmedicine.com/" %></h3>
+      <h3><%= link_to 'Family Services of the Piedmont', "http://www.safeandhealthyfamilies.com" %></h3>
       <p>Offers free services to patients of all ages</p>
     </div>
   </div>
@@ -68,14 +67,14 @@
       <h3><%= link_to 'Tiny Houses Greensboro', "https://tinyhousesgso.wordpress.com" %></h3>
       <p>A coalition to support people experiencing homelessness.</p>
     </div>
-  </div>  
+  </div>
   <div class="card">
     <%=image_tag('partners/americorps.png') %>
     <div class="caption">
       <h3><%= link_to 'Americorps Partnership to End Homelessness', "http://www.theservantcenter.org/AmeriCorps.aspx" %></h3>
       <p>Network of national service programs that meet educational, public safety, environmental, homeland security, and other human service needs.</p>
     </div>
-  </div>  
+  </div>
   <div class="card">
     <%=image_tag('partners/artifacts.png') %>
     <div class="caption">
@@ -89,7 +88,7 @@
       <h3><%= link_to 'CSWEI', "http://hhs.uncg.edu/wordpress/swk/cswei/" %></h3>
       <p>NCAT and UNCG offer students a non-traditional opportunity to complete their internship requirements by providing community-based social work services to Greensboro area congregants/residents.</p>
     </div>
-  </div>  
+  </div>
   <div class="card">
     <%=image_tag('partners/fnb.jpg') %>
     <div class="caption">
@@ -110,5 +109,5 @@
       <h3><%= link_to 'Central Carolina Worker Justice Center', "http://carolinaworkers.org" %></h3>
       <p>CCWJC will be a place where low-wage workers can organize and take collective action to achieve racial and economic justice in Central Carolina communities.</p>
     </div>
-  </div>  
+  </div>
 </div>
